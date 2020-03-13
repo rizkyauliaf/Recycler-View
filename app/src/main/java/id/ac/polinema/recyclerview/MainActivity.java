@@ -1,10 +1,10 @@
 package id.ac.polinema.recyclerview;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
 	public void handleViewTypeButton(View view) {
 		Intent intent = new Intent(this, ViewTypeActivity.class);
+		startActivity(intent);
+	}
+
+	public void handleExerciseButton(View view) {
+		Intent intent = new Intent(this, ExerciseActivity.class);
+		startActivity(intent);
+	}
+
+	public void handleFastAdapter(View view) {
+		Intent intent = new Intent(this, FastAdapterActivity.class);
 		startActivity(intent);
 	}
 }
